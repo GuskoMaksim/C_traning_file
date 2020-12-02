@@ -37,12 +37,21 @@ int main()
 			cout << "ֲגוהטעו טלÿ פאיכא ";
 			string name_file;
 			cin >> name_file;
-			f.read_file(name_file);
+			try
+			{
+				f.read_file(name_file);
+			}
+			catch (const std::exception& e)
+			{
+				cout << e.what() << endl;
+			}
 			break;
+			_getch();
 		}
 		case 2:
 		{
 			f.add_person();
+			_getch();
 			break;
 		}
 		case 3:

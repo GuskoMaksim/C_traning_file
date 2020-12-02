@@ -41,6 +41,10 @@ public:
 	{
 		name_file = new_name_file;
 		file.open(name_file, ios_base::in);
+		if (!file.is_open())
+		{
+			throw exception("Файл не открыт, нет файла с таким именем!");
+		}
 		char* str = new char[1024];
 		while (!file.eof())
 		{
@@ -90,7 +94,6 @@ public:
 		file.close();
 		delete[] str;
 		cout << "Продолжить";
-		_getch();
 	}
 	void add_person()
 	{
@@ -223,6 +226,10 @@ public:
 	{
 		add_file("file_save.txt");
 	}
+
+	
+
 };
 
 #endif // !STRUCT_H
+
