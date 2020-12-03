@@ -226,10 +226,5 @@ public:
 	{
 		add_file("file_save.txt");
 	}
-
-	
-
 };
-
 #endif // !STRUCT_H
-
