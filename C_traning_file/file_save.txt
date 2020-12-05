@@ -1,5 +1,5 @@
-Gusko Maksim Nikol,25,12,2000,1
 Aus His Drus,1,11,1990,0
+A His Drus,1,11,1990,0
+Gusko Maksim Nikol,25,12,2000,1
 G His Drus,1,12,1990,0
 H His Drus,1,11,1990,0
-A His Drus,1,11,1990,0
